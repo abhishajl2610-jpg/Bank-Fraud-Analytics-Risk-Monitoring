@@ -1,0 +1,3190 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DashboardRoundedCorners.true...DashboardRoundedCorners />
+    <Extensions />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Bank_Fraud_Final' inline='true' name='federated.0541diq07gxbfg19hp8090bwdyvc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bank_Fraud_Final' name='textscan.0tbhhk214n5wiw12t778u1nghb1e'>
+            <connection class='textscan' directory='C:/Users/abish/Desktop/DA GenAI/Project/Bank Fraud Detection' filename='Bank_Fraud_Final.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tbhhk214n5wiw12t778u1nghb1e' name='Bank_Fraud_Final.csv' table='[Bank_Fraud_Final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Customer_ID' ordinal='0' />
+            <column datatype='string' name='Customer_Name' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='string' name='City' ordinal='5' />
+            <column datatype='string' name='Bank_Branch' ordinal='6' />
+            <column datatype='string' name='Account_Type' ordinal='7' />
+            <column datatype='string' name='Transaction_ID' ordinal='8' />
+            <column datatype='datetime' name='Transaction_Date' ordinal='9' />
+            <column datatype='datetime' name='Transaction_Time' ordinal='10' />
+            <column datatype='real' name='Transaction_Amount' ordinal='11' />
+            <column datatype='string' name='Merchant_ID' ordinal='12' />
+            <column datatype='string' name='Transaction_Type' ordinal='13' />
+            <column datatype='string' name='Merchant_Category' ordinal='14' />
+            <column datatype='real' name='Account_Balance' ordinal='15' />
+            <column datatype='string' name='Transaction_Device' ordinal='16' />
+            <column datatype='string' name='Transaction_Location' ordinal='17' />
+            <column datatype='string' name='Device_Type' ordinal='18' />
+            <column datatype='integer' name='Is_Fraud' ordinal='19' />
+            <column datatype='string' name='Transaction_Currency' ordinal='20' />
+            <column datatype='string' name='Customer_Contact' ordinal='21' />
+            <column datatype='string' name='Transaction_Description' ordinal='22' />
+            <column datatype='string' name='Customer_Email' ordinal='23' />
+            <column datatype='integer' name='Hour' ordinal='24' />
+            <column datatype='string' name='Age_Group' ordinal='25' />
+            <column datatype='string' name='Day_Name' ordinal='26' />
+            <column datatype='string' name='month_name' ordinal='27' />
+            <column datatype='string' name='Transaction_Size' ordinal='28' />
+            <column datatype='string' name='Balance' ordinal='29' />
+            <column datatype='string' name='Time_of_Day' ordinal='30' />
+            <column datatype='real' name='Balance_Utilization' ordinal='31' />
+            <column datatype='integer' name='Risk_Score' ordinal='32' />
+            <column datatype='string' name='Risk_Level' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_ID]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Customer_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Name]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Customer_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank_Branch</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank_Branch]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Bank_Branch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Account_Type]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Account_Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_ID]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Transaction_Date]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Transaction_Time]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Transaction_Amount]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Amount</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Merchant_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Merchant_ID]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Merchant_ID</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Type]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Merchant_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Merchant_Category]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Merchant_Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account_Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Account_Balance]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Account_Balance</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Device</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Device]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Device</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Location]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Location</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Device_Type]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Device_Type</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Fraud]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Is_Fraud</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Currency]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Currency</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Contact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Contact]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Customer_Contact</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Description]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Description</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Email</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Email]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Customer_Email</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age_Group]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Age_Group</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day_Name]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Day_Name</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_name]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>month_name</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Size]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Transaction_Size</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_of_Day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time_of_Day]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Time_of_Day</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance_Utilization</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance_Utilization]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Balance_Utilization</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Risk_Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Risk_Score]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Risk_Score</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Risk_Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Risk_Level]</local-name>
+            <parent-name>[Bank_Fraud_Final.csv]</parent-name>
+            <remote-alias>Risk_Level</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Account Balance' datatype='real' name='[Account_Balance]' role='measure' type='quantitative' />
+      <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[Age_Group]' role='dimension' type='nominal' />
+      <column caption='Balance Utilization' datatype='real' name='[Balance_Utilization]' role='measure' type='quantitative' />
+      <column caption='Bank Branch' datatype='string' name='[Bank_Branch]' role='dimension' type='nominal' />
+      <column caption='High Risk Transaction' datatype='integer' name='[Calculation_0069857766469632]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Risk_Level] = &quot;High Risk&quot; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+      </column>
+      <column caption='Fraud rate' datatype='real' name='[Calculation_1466786139041792]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Contact' datatype='string' name='[Customer_Contact]' role='dimension' type='nominal' />
+      <column caption='Customer Email' datatype='string' name='[Customer_Email]' role='dimension' type='nominal' />
+      <column caption='Customer ID' datatype='string' name='[Customer_ID]' role='dimension' type='nominal' />
+      <column caption='Customer Name' datatype='string' name='[Customer_Name]' role='dimension' type='nominal' />
+      <column caption='Day Name' datatype='string' name='[Day_Name]' role='dimension' type='nominal' />
+      <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+      <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+      <column caption='Merchant Category' datatype='string' name='[Merchant_Category]' role='dimension' type='nominal' />
+      <column caption='Merchant ID' datatype='string' name='[Merchant_ID]' role='dimension' type='nominal' />
+      <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+      <column caption='Risk Score' datatype='integer' name='[Risk_Score]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Time of Day' datatype='string' name='[Time_of_Day]' role='dimension' type='nominal' />
+      <column caption='Transaction Amount' datatype='real' name='[Transaction_Amount]' role='measure' type='quantitative' />
+      <column caption='Transaction Currency' datatype='string' name='[Transaction_Currency]' role='dimension' type='nominal' />
+      <column caption='Transaction Date' datatype='datetime' name='[Transaction_Date]' role='dimension' type='ordinal' />
+      <column caption='Transaction Description' datatype='string' name='[Transaction_Description]' role='dimension' type='nominal' />
+      <column caption='Transaction Device' datatype='string' name='[Transaction_Device]' role='dimension' type='nominal' />
+      <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+      <column caption='Transaction Location' datatype='string' name='[Transaction_Location]' role='dimension' type='nominal' />
+      <column caption='Transaction Size' datatype='string' name='[Transaction_Size]' role='dimension' type='nominal' />
+      <column caption='Transaction Time' datatype='datetime' name='[Transaction_Time]' role='dimension' type='ordinal' />
+      <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+      <column caption='Bank_Fraud_Final.csv' datatype='table' name='[__tableau_internal_object_id__].[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]' role='measure' type='quantitative' />
+      <column caption='Month Name' datatype='string' name='[month_name]' role='dimension' type='nominal' />
+      <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Device Type)' hidden='true' name='[Action (Device Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Device_Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Merchant Category)' hidden='true' name='[Action (Merchant Category)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Merchant_Category]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Risk Level)' hidden='true' name='[Action (Risk Level)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Risk_Level]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[State]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Time of Day)' hidden='true' name='[Action (Time of Day)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Time_of_Day]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Transaction Type)' hidden='true' name='[Action (Transaction Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Transaction_Type]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/abish/AppData/Local/Temp/TableauTemp/#TableauTemp_1twqjb017856ho1339ezx1ie2fi3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2026 07:02:41 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>189224</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>170</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank_Branch</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bank_Branch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank_Branch</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>170</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Account_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Account_Type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_ID</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Transaction_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Transaction_Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Time</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>92967</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Transaction_Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Amount</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Merchant_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Merchant_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Merchant_ID</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Type</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Merchant_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Merchant_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Merchant_Category</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Account_Balance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Account_Balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Account_Balance</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Device</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Device]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Device</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Location</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Device_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Device_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Device_Type</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is_Fraud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Is_Fraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is_Fraud</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Currency</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Contact</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Contact]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Contact</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38278</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Description</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Email</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Email]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Email</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28568</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hour</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age_Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age_Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age_Group</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day_Name</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[month_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month_name</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Size</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Balance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Balance</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time_of_Day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time_of_Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time_of_Day</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Balance_Utilization</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Balance_Utilization]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Balance_Utilization</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Risk_Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Risk_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Risk_Score</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Risk_Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Risk_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Risk_Level</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Bank_Fraud_Final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Risk_Level:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High Risk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Low Risk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Medium Risk&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Bank_Fraud_Final.csv' id='Bank_Fraud_Final.csv_3FBB7189B35E448AB9A91904D009457B'>
+            <properties context=''>
+              <relation connection='textscan.0tbhhk214n5wiw12t778u1nghb1e' name='Bank_Fraud_Final.csv' table='[Bank_Fraud_Final#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Customer_ID' ordinal='0' />
+                  <column datatype='string' name='Customer_Name' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                  <column datatype='string' name='State' ordinal='4' />
+                  <column datatype='string' name='City' ordinal='5' />
+                  <column datatype='string' name='Bank_Branch' ordinal='6' />
+                  <column datatype='string' name='Account_Type' ordinal='7' />
+                  <column datatype='string' name='Transaction_ID' ordinal='8' />
+                  <column datatype='datetime' name='Transaction_Date' ordinal='9' />
+                  <column datatype='datetime' name='Transaction_Time' ordinal='10' />
+                  <column datatype='real' name='Transaction_Amount' ordinal='11' />
+                  <column datatype='string' name='Merchant_ID' ordinal='12' />
+                  <column datatype='string' name='Transaction_Type' ordinal='13' />
+                  <column datatype='string' name='Merchant_Category' ordinal='14' />
+                  <column datatype='real' name='Account_Balance' ordinal='15' />
+                  <column datatype='string' name='Transaction_Device' ordinal='16' />
+                  <column datatype='string' name='Transaction_Location' ordinal='17' />
+                  <column datatype='string' name='Device_Type' ordinal='18' />
+                  <column datatype='integer' name='Is_Fraud' ordinal='19' />
+                  <column datatype='string' name='Transaction_Currency' ordinal='20' />
+                  <column datatype='string' name='Customer_Contact' ordinal='21' />
+                  <column datatype='string' name='Transaction_Description' ordinal='22' />
+                  <column datatype='string' name='Customer_Email' ordinal='23' />
+                  <column datatype='integer' name='Hour' ordinal='24' />
+                  <column datatype='string' name='Age_Group' ordinal='25' />
+                  <column datatype='string' name='Day_Name' ordinal='26' />
+                  <column datatype='string' name='month_name' ordinal='27' />
+                  <column datatype='string' name='Transaction_Size' ordinal='28' />
+                  <column datatype='string' name='Balance' ordinal='29' />
+                  <column datatype='string' name='Time_of_Day' ordinal='30' />
+                  <column datatype='real' name='Balance_Utilization' ordinal='31' />
+                  <column datatype='integer' name='Risk_Score' ordinal='32' />
+                  <column datatype='string' name='Risk_Level' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0541diq07gxbfg19hp8090bwdyvc'>
+      <datasources>
+        <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+        <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+        <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+        <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+        <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+        <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]'>
+        <groupfilter function='level-members' level='[none:Account_Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]'>
+        <groupfilter function='level-members' level='[none:Device_Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]'>
+        <groupfilter function='level-members' level='[none:Risk_Level:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]'>
+        <groupfilter function='level-members' level='[none:Transaction_Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Fraud Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='4.4617786407470703' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C2622160-4F33-4CEC-B2DE-DF269474FE38}' />
+    </worksheet>
+    <worksheet name='Fraud Rate by Device Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Rate by Device Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction Date' datatype='datetime' name='[Transaction_Date]' role='dimension' type='ordinal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Date]' derivation='None' name='[none:Transaction_Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]' direction='DESC' using='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' />
+          <filter class='quantitative' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Date:qk]' included-values='in-range'>
+            <min>#2025-01-01 00:00:00#</min>
+            <max>#2025-01-31 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]' value='Account Type'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Book' fontsize='14'>Account Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]' value='Device Type'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Book' fontsize='14'>Device Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Date:qk]' value='Transaction Date'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Book' fontsize='15'>Transaction Date</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]' value='Transaction Type'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Book' fontsize='15'>Transaction Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' value='Risk Level'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Book' fontsize='15'>Risk Level</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</cols>
+      </table>
+      <simple-id uuid='{39B8B39F-83A8-4442-9BB9-F06E8B11A636}' />
+    </worksheet>
+    <worksheet name='Fraud Rate by Merchant Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Rate by Merchant Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Merchant Category' datatype='string' name='[Merchant_Category]' role='dimension' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Merchant_Category]' derivation='None' name='[none:Merchant_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Merchant_Category:nk]' direction='DESC' using='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' />
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Merchant_Category:nk]' value='92' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Merchant_Category:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</cols>
+      </table>
+      <simple-id uuid='{96312947-CA37-47DC-AD22-51F59B759815}' />
+    </worksheet>
+    <worksheet name='Fraud Rate by Risk Level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud rate' datatype='real' name='[Calculation_1466786139041792]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1466786139041792]' derivation='User' name='[usr:Calculation_1466786139041792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' value='72' />
+            <format attr='display' class='0' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' value='68' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_1466786139041792:qk]</cols>
+      </table>
+      <simple-id uuid='{82B6B155-2AEC-44CA-BF73-391A51BC3BFE}' />
+    </worksheet>
+    <worksheet name='Fraud Rate by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Rate by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:State:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_0909605438820353]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:State:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' value='54' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:State:nk]' value='124' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:State:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</cols>
+      </table>
+      <simple-id uuid='{BFB5E43B-3F63-468A-B639-50E6C89E6CB1}' />
+    </worksheet>
+    <worksheet name='Fraud Rate by Transaction Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Rate by Transaction Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is_Fraud]' derivation='Sum' name='[sum:Is_Fraud:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]' direction='DESC' using='[federated.0541diq07gxbfg19hp8090bwdyvc].[sum:Is_Fraud:qk]' />
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' value='56' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]' value='104' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</cols>
+      </table>
+      <simple-id uuid='{A92DA614-6FC9-4212-87E3-C1C730F842A1}' />
+    </worksheet>
+    <worksheet name='Fraud Transactions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Transactions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is_Fraud]' derivation='Sum' name='[sum:Is_Fraud:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0541diq07gxbfg19hp8090bwdyvc].[sum:Is_Fraud:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='4.2105045318603516' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{507993A8-3B1D-446D-8BB8-74F9BE289AAD}' />
+    </worksheet>
+    <worksheet name='Fraud by Risk Level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud Rate by Risk Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='Count' name='[cnt:Risk_Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' direction='ASC' using='[federated.0541diq07gxbfg19hp8090bwdyvc].[cnt:Risk_Level:qk]' />
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' value='66' />
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' value='76' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' value='72' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#606b76' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</cols>
+      </table>
+      <simple-id uuid='{CAAF4226-4850-4D32-AFBD-FB9EEA66D4C9}' />
+    </worksheet>
+    <worksheet name='Fraud by Time of Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Fraud by Time of Day</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Fraud Rate' datatype='real' default-format='p0.00%' name='[Calculation_0909605438820353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Is_Fraud]) / COUNT([Transaction_ID])' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Is Fraud' datatype='integer' name='[Is_Fraud]' role='measure' type='quantitative' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Time of Day' datatype='string' name='[Time_of_Day]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Time_of_Day]' derivation='None' name='[none:Time_of_Day:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0909605438820353]' derivation='User' name='[usr:Calculation_0909605438820353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Time_of_Day:nk]' direction='DESC' using='[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]' />
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Time_of_Day:nk]' value='109' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Time_of_Day:nk]</rows>
+        <cols>[federated.0541diq07gxbfg19hp8090bwdyvc].[usr:Calculation_0909605438820353:qk]</cols>
+      </table>
+      <simple-id uuid='{4B07E556-55AF-47DD-833F-931E4FA0CA2A}' />
+    </worksheet>
+    <worksheet name='High Risk Transaction'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>High Risk Transaction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='High Risk Transaction' datatype='integer' name='[Calculation_0069857766469632]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Risk_Level] = &quot;High Risk&quot; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0069857766469632]' derivation='Sum' name='[sum:Calculation_0069857766469632:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='250' />
+            <format attr='height' value='47' />
+            <format attr='font-size' field='[federated.0541diq07gxbfg19hp8090bwdyvc].[sum:Calculation_0069857766469632:qk]' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0541diq07gxbfg19hp8090bwdyvc].[sum:Calculation_0069857766469632:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7DA25579-7DC4-49E4-AC09-D6E61C98C5DA}' />
+    </worksheet>
+    <worksheet name='Total Transactions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Total Transactions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+            <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+            <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+            <column caption='Transaction ID' datatype='string' name='[Transaction_ID]' role='dimension' type='nominal' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Transaction_ID]' derivation='Count' name='[cnt:Transaction_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]</column>
+            <column>[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0541diq07gxbfg19hp8090bwdyvc].[cnt:Transaction_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='4.1456303596496582' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{86ADB715-F556-4A25-8600-35CA683B125E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>DATA-DRIVEN BANK FRAUD ANALYTICS AND RISK MONITORING USING TRANSACTION AND CUSTOMER BEHAVIOUR ANALYSIS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Bank_Fraud_Final' name='federated.0541diq07gxbfg19hp8090bwdyvc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0541diq07gxbfg19hp8090bwdyvc'>
+        <column caption='Account Type' datatype='string' name='[Account_Type]' role='dimension' type='nominal' />
+        <column caption='Device Type' datatype='string' name='[Device_Type]' role='dimension' type='nominal' />
+        <column caption='Risk Level' datatype='string' name='[Risk_Level]' role='dimension' type='nominal' />
+        <column caption='Transaction Date' datatype='datetime' name='[Transaction_Date]' role='dimension' type='ordinal' />
+        <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+        <column-instance column='[Account_Type]' derivation='None' name='[none:Account_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Device_Type]' derivation='None' name='[none:Device_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Risk_Level]' derivation='None' name='[none:Risk_Level:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Transaction_Date]' derivation='None' name='[none:Transaction_Date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98120' id='5' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone fixed-size='116' h='14571' id='7' is-fixed='true' type-v2='title' w='99034' x='483' y='940'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#f5f5f5' />
+              </zone-style>
+            </zone>
+            <zone h='83549' id='6' type-v2='layout-basic' w='99034' x='483' y='15511'>
+              <zone forceUpdate='true' h='83549' id='21' param='[com.tableau.addfilters].[0.0.0].[https://extensions.tableauusercontent.com/sandbox/add-filters/index.html]' type-v2='dashboard-object' w='99034' x='483' y='15511'>
+                <add-in add-in-id='com.tableau.addfilters' extension-url='https://extensions.tableauusercontent.com/sandbox/add-filters/index.html' extension-version='0.0.0' instance-id='6CCFD83B51DF4A1A8A354932415340BF'>
+                  <instance-settings />
+                  <type-settings>
+                    <dashboard />
+                  </type-settings>
+                </add-in>
+                <zone-style>
+                  <format attr='border-color' value='#ffffff' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5f5f5' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='14101' id='8' name='Total Transactions' w='15932' x='6578' y='17156'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='14219' id='9' name='Fraud Transactions' w='15691' x='29390' y='17274'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='14336' id='10' name='Fraud Rate' w='15631' x='52746' y='17274'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='31962' id='11' name='Fraud Rate by Transaction Type' w='30115' x='966' y='31727'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='33373' id='12' name='Fraud Rate by Merchant Category' w='30175' x='1086' y='64277'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='33255' id='13' name='Fraud by Time of Day' w='21485' x='62583' y='64160'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='31610' id='14' name='Fraud Rate by Device Type' w='30779' x='31382' y='32432'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='33020' id='15' name='Fraud Rate by State' w='30899' x='31503' y='64512'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='29965' id='16' name='Fraud by Risk Level' w='21666' x='62402' y='33373'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='16686' id='45' name='High Risk Transaction' w='15389' x='76826' y='16569'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='12456' id='46' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]' type-v2='filter' values='database' w='14424' x='84188' y='59224'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='10811' id='47' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]' type-v2='filter' values='database' w='14484' x='84309' y='87662'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='12456' id='48' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]' type-v2='filter' values='database' w='13699' x='84731' y='45828'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='11986' id='49' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' type-v2='filter' values='database' w='14243' x='84309' y='73325'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+        <zone h='12456' id='50' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Date:qk]' type-v2='filter' values='database' w='14303' x='84550' y='33608'>
+          <zone-style>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>DATA-DRIVEN BANK FRAUD ANALYTICS AND RISK MONITORING USING TRANSACTION AND CUSTOMER BEHAVIOUR ANALYSIS</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2550' minheight='2550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='52' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='51' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone fixed-size='116' h='14571' id='7' type-v2='title' w='99034' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f5f5' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='83549' id='21' param='[com.tableau.addfilters].[0.0.0].[https://extensions.tableauusercontent.com/sandbox/add-filters/index.html]' type-v2='dashboard-object' w='99034' x='483' y='15511'>
+                  <add-in add-in-id='com.tableau.addfilters' extension-url='https://extensions.tableauusercontent.com/sandbox/add-filters/index.html' extension-version='0.0.0' instance-id='6CCFD83B51DF4A1A8A354932415340BF'>
+                    <instance-settings />
+                    <type-settings>
+                      <dashboard />
+                    </type-settings>
+                  </add-in>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f5f5' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='131' h='16686' id='45' is-fixed='true' name='High Risk Transaction' w='15389' x='76826' y='16569'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='111' h='14101' id='8' is-fixed='true' name='Total Transactions' w='15932' x='6578' y='17156'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='112' h='14219' id='9' is-fixed='true' name='Fraud Transactions' w='15691' x='29390' y='17274'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='113' h='14336' id='10' is-fixed='true' name='Fraud Rate' w='15631' x='52746' y='17274'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='31962' id='11' is-fixed='true' name='Fraud Rate by Transaction Type' w='30115' x='966' y='31727'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12456' id='46' mode='checkdropdown' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]' type-v2='filter' values='database' w='14424' x='84188' y='59224'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10811' id='47' mode='checkdropdown' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Device_Type:nk]' type-v2='filter' values='database' w='14484' x='84309' y='87662'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12456' id='48' mode='checkdropdown' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Type:nk]' type-v2='filter' values='database' w='13699' x='84731' y='45828'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11986' id='49' mode='checkdropdown' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Risk_Level:nk]' type-v2='filter' values='database' w='14243' x='84309' y='73325'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12456' id='50' name='Fraud Rate by Device Type' param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Transaction_Date:qk]' type-v2='filter' values='database' w='14303' x='84550' y='33608'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='31610' id='14' is-fixed='true' name='Fraud Rate by Device Type' w='30779' x='31382' y='32432'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='238' h='29965' id='16' is-fixed='true' name='Fraud by Risk Level' w='21666' x='62402' y='33373'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='264' h='33255' id='13' is-fixed='true' name='Fraud by Time of Day' w='21485' x='62583' y='64160'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='33373' id='12' is-fixed='true' name='Fraud Rate by Merchant Category' w='30175' x='1086' y='64277'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='262' h='33020' id='15' is-fixed='true' name='Fraud Rate by State' w='30899' x='31503' y='64512'>
+                  <zone-style>
+                    <format attr='border-color' value='#ffffff' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='25' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8075CD93-0488-4116-9050-BD0CBB4D0AE5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Transactions'>
+      <cards>
+        <edge name='left'>
+          <strip size='180'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B4F69E3-1752-419D-A692-93A9FB0985AD}' />
+    </window>
+    <window class='worksheet' name='Fraud Transactions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{61B0A05C-8ACA-43E3-92AD-878809AF8437}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9E4ED9A-2E29-4788-B543-5F8C9885F85B}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate by Transaction Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{902AD01A-3148-4867-8D31-B8FB1043405D}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate by Merchant Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E29AB09C-2823-4007-9068-A6366C191A51}' />
+    </window>
+    <window class='worksheet' name='Fraud by Time of Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{446664D2-68B0-4475-9615-5AA159D31B60}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate by Device Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0541diq07gxbfg19hp8090bwdyvc].[none:Account_Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{36D62AD3-03CE-4EC8-9E3F-09FCB6CDD089}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1CDE6CC-9869-4D96-95A4-8DCA4AE4CC81}' />
+    </window>
+    <window class='worksheet' name='Fraud by Risk Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEC57033-9973-45DC-B6AE-9E63F60DC93B}' />
+    </window>
+    <window class='worksheet' name='Fraud Rate by Risk Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B962D57-97CA-4EC6-AFA5-047A280B04BD}' />
+    </window>
+    <window class='worksheet' name='High Risk Transaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{53ADF948-4DCB-4F86-A159-35B04CBD3E04}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Fraud Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Rate by Device Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Rate by Merchant Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Rate by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Rate by Transaction Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud Transactions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud by Risk Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud by Time of Day'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='High Risk Transaction' />
+        <viewpoint name='Total Transactions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='47' />
+      <simple-id uuid='{1287898F-9E0F-4100-8B86-B131E2B520F0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <dashboard-extension extension-version='0.0.0' id='com.tableau.addfilters'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Add Filters</description>
+          <author email='customerservice@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com' />
+          <min-api-version>1.7</min-api-version>
+          <source-location>
+            <url>https://extensions.tableauusercontent.com/sandbox/add-filters/index.html</url>
+          </source-location>
+          <icon>iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAEagAwAEAAAAAQAAAEYAAAAAnR9tGwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDYuMC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KGV7hBwAACZ9JREFUeAHtnH9sFMcVx2d379bnwxjbQF0bEmKc9g8MUYUpjQNEkKBUuCpx1RoEqps/yo9KSNQIFCEk4AptVX4opvmjSiCBJLRE2AilCiKgJsVtqIpdrDZQE/pLmBCuxqjxb2zf3e72++Z2rLV9ez/sO5s9M9J6dmdnd+d97r2Zt/NmzdijFJGARKU+n09GRtukTX6/X1q5cqW+Zs0ajUMwoUxaIDaCS1xjampq5t69e7eiq6srGxUNm8ppW6zrOlNVlRUUFHyye/fu90hQ6dChQ2W3b9/+oyRJLkVRGG2TLRmGwYLBIJcdgN49ePDgeqm6uvq9UCj0Ira+zs5Od2trq+HxeBgqkzaltfZAGSTIbbhcLjZ79mySWc7MzFSmT59e6sKJTJxn3d3danl5uTJ//nzW29vLZDn9+2LSFLIQTdPY2bNnWUdHR4jKoCBTXTk5Ob/v6el5AVoSunnzpgI4LC8vb1JZ04ULF1hbW5uWlZXlgpK0rV69uklet25dDSj83ev1Zty6dSuwfft2dufOHQ4G2sSoY0q3jTSENIPS6dOn2YEDB4wpU6bwDnjGjBkvr1ixooePSqdOncpvaGi4gspPYGQKogNy79mzh82aNYtDSSezIiDUdVA6c+YMO3HihD537lzqOmRYz859+/YdwClFhh/jWr9+/b0lS5YsRsHN7OxsdyAQCKICwxDO+xrSmHRIkaAUFRWBk0RQqgUUyKpxdAQHW+jy5ctT6+rq/owblKSb5thBgaJIGIW2QP5fAYiLoGAz+NBDUAjO0qVLuysrK8tAsNnUnEA6aE40KNAUDmX58uUEJURQsLGwsdEeEsEhSOmkOXZQMExL06ZN27J//36hKQRlMA1xVggKwbFoznUn9zk2UKiflaApP7KDQnSGgKECK5yqqqqnYVZ/A1nHdchRoLDc3NwN6CJet5gPiT4kDTEl6xnSHIJ09epV78mTJ/+Ec1+DR+iIoTwOKG+Wlpa6m5qaglaZrfu2YKiSE+EkAwrJHhWM0+AkC0pcYJwCJ5lQ4gbzsMNJNhSSd8SoRIWREnXE1OcsWrToAUarJagjRqsJdQJTAYXkjxsMVY4A568YylW8W00InFRBSRjMcDgVFRXPwM9pnAg40aDAeXsJfsqb5KdEG5JJHrsUc1Syu5DMijSoublZPXbs2Mdo6GL4OQFMWaipnrKIBgXO2w8A5WQsP8VOLlGekCmJiygXZlVSUhLYuHHjsvHSnGhQ8JZcRVA2bdoU1XmzymG3P2qNETccrjkoX4y505RoTgQoGuZTFLz7MJhPFd59fk1Qjh49auvRinbHyscMhh4g4KDh7m3btn2IomcBJ6mvD5GgYOaNx3owHbkWbagdq/lYYSUliFRfX6/X1tZShCF05cqVt8rKyp7F5PqTiDYEMIWhLFy4kKGD5tOkMDnr8+PajwZl5syZFYByljTl3LlzY9YU0aDEWymujJATHBH7heZ8BIGeG6tZxYKyd+/e3ybLfKwiJRUM3dgGzqjMaqKgkByjHpXo4kiJNIbg0DnExJ/HTNnv0DEmPJ8TDUp+fv6LqdIUIVPSNUbc2Ko5O3bsOI8Y1ap4O+RoUBBKLd+5c+cHqTAf0XbKUwaGbh4PHCsEusZ6bMZ9NDH6jBcUakdKwdADhsNBFHBVe3u7BgdZwZILEUwfDILRNQSHYsnHjx/Xi4uLZToeTyjUhqT3MXRTa7L2OYcPHy7HcH0efY6CVRXaxYsXrVUHw6ZY3cTgpBnQFBkmGCosLPzWaM0HQ7lcuul1N+VDHhbjgGIpKU8ER/QJAwMDP8Wyi3JoDI8V2z0c7r2OjlsBlz/s2rXrPOJdKmAF7OpHLMdSFp8kURhVb6IKtLRFkuJa2jIuYKhNMB8e5+3v7/dSAJ3CvmQidglA+CnUE790eG2c3QXDy00IW37z0ZzGu/deKn0s953XJKklXjjjBka0G0qgj8b7FdfHndfVEVCt/jN/zae5hd950OJ/CsffY2Z5rPuMO5hYDUra+brwnZr7AtlMaWfN/cFcXmKWx3qOUNNY9Rx7Hq/eGpZNMQWryhIRIu3BoGPiLonI44WT9mDiBTG83iQAYz/yDYdhPZ4EYEbn3DsZjMR9EvJXIm0lN8JE6BwlkVN5pPrWMlR35nBNQpAHG3020ByFuOcLUc0ckQ3m8+E4WvLJzgMjoECuWT9/e7o7oGt6f98Ie9Gyp8g5gVvdNwxD5W/szFDn+Xxqh1o0VenqHbHaUvZkGi24z6rCbO2Drd/vchYYE8qGUx/mN9xuff96X/BJRTKCusczAgwLaMzP5tBLRw7r6cTCOumZG8acOyiXGD4JGJ5gX4ypHr2hI+R9/pXa3Y4CUwl3Ho6r9nlb5+P3PVlfZwoWaMOcbMcdMrUHPXiFxIpnRVENb9aXmEHKMpIj3UPC+9sX3ix2r+d/5Y4CUxf+yEq6UP3dv3zzl6fXtj7ofQoaMxAysFDXogLcTvBCJhv6gM6kDUzNLGaB/v/IPe1v6JKcQRM8VEdcI/Z13ZC+ovVpLxTNedtRYEzZuYJc/PHaWhzXCj+fw7DAoV1etvf4MubxFrOBvn/oP/nhLwbLxXkqQBLX/wv7r2BzIhiSgy1H7LzeXyCxwq8OtST/P8NledcVtnXrAKxG5eZDOaVXX81gXyxAB2TW44WWPyj3Ff5XcyyYehp2o6XKWgHMzM0Jqo+/HGJ1K6LO7fhwX2Fm0R7h8HOioxWc4hNnEoARQASgR2BMAokBEdgmgcYIURPL0x4MYsXclkQeL560B6NpugtfgzJN1xNa8pK+YCrDulHiVdvl7FxWkql28RKzPJbmTJgfQyEUEVeiGJM4RniFl485xFJZyZ3ZZU/M2OH5vPWTpx/Pe6eZaJjlDy0YgkEfglMiGNaUkZHBA3JUBnhivLVWib1P8zV4G+dBNsb2P7SRSCEJQrN4idUZopEGfcbc2NjIKOooNMbtdtM30AyfO/MPxemrK3Ftwjng+BCzft9foHwbbr4vHK6N6zbjZkpY9mrgQ1S2YMGCf1+7dk2H4C58AB+4dOkSyT6oFQQNH4YzLDjUUK5g3e41kuT+/fujckgAhkwqHLuOC0m40riBoQYiMK9s3rz5MyyQfhmLpQ/j/yioADCiuQQHy0XcMLFP582b9zOqgFXeOhZBjqibqoJR/QpjbAw90zhy5Mg3WlpaVuLfJ7itGkP3hlnJWE7Wgi/m38XWT+Zg/vJjfPTDf3nc/QZBmQhxJkJjuJxkVuh3Ij6f/i0SFgsZWICoQXsG+5+JAPTomcMI/B/lLIiJaYJCxgAAAABJRU5ErkJggg==</icon>
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </dashboard-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='de_DE'>Filter hinzufügen</text>
+            <text locale='en_GB'>Add Filters</text>
+            <text locale='en_US'>Add Filters</text>
+            <text locale='es_ES'>Añadir filtros</text>
+            <text locale='fr_CA'>Ajouter des filtres</text>
+            <text locale='fr_FR'>Ajouter des filtres</text>
+            <text locale='it_IT'>Aggiungi filtri</text>
+            <text locale='ja_JP'>フィルターの追加</text>
+            <text locale='ko_KR'>필터 추가</text>
+            <text locale='pt_BR'>Adicionar filtros</text>
+            <text locale='sv_SE'>Lägg till filter</text>
+            <text locale='th_TH'>เพิ่มตัวกรอง</text>
+            <text locale='zh_CN'>添加筛选器</text>
+            <text locale='zh_TW'>新增篩選器</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Dashboard 1' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>
